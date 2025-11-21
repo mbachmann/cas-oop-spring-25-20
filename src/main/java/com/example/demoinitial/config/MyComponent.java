@@ -31,7 +31,7 @@ public class MyComponent {
     public Person getMaxMustermann() {
         Person person = new Person();
         person.setFirstName("Max");
-        person.setLastName("Muster");
+        person.setLastName("Mustermann");
         return person;
     }
 

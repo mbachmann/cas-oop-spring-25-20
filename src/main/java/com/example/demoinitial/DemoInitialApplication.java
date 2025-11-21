@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.Arrays;
 
-@Controller
 @SpringBootApplication
 public class DemoInitialApplication implements HasLogger {
 
@@ -23,11 +22,6 @@ public class DemoInitialApplication implements HasLogger {
         SpringApplication.run(DemoInitialApplication.class, args);
     }
 
-    @RequestMapping("/")
-    @ResponseBody
-    String home() {
-        return "Hello World ";
-    }
 
     @PostConstruct
     public void afterInit() {
